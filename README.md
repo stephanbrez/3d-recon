@@ -150,10 +150,10 @@ episodes worth calling out:
 [VISUAL: side-by-side interpolated flythrough of nerfacto vs splatfacto using
 `ns-render interpolate` along the circular training camera path]
 
+![Video preview](assets/sbs_video_preview.gif)
 ![Training camera renders](assets/sidebyside.mov)
 
-**3DGS outperformed NeRF on image quality.** 
-Higher PSNR and SSIM, lower LPIPS
+**3DGS outperformed NeRF on image quality.** Higher PSNR and SSIM, lower LPIPS
 on both training and held-out views. Not dramatic, but consistent. The
 train/eval gap was small for both methods. With a well-distributed ~100-image
 capture set, neither was overfitting aggressively.
@@ -166,8 +166,7 @@ capture set, neither was overfitting aggressively.
 | SSIM   | 0.8332       | 0.8745       | 0.7901      | 0.8666      |
 | LPIPS  | 0.4241       | 0.3477       | 0.4931      | 0.3887      |
 
-**3DGS also won on geometry.** 
-Lower Chamfer and Hausdorff distances, higher
+**3DGS also won on geometry.** Lower Chamfer and Hausdorff distances, higher
 F-score against the COLMAP reference. Somewhat expected. 3DGS explicitly
 represents the scene as positioned primitives, while nerfacto's geometry has to
 be extracted via Poisson reconstruction from a density field. The nerfacto mesh
@@ -200,10 +199,9 @@ methods]
 | 3dgs   | 0.05       | 0.1       | 110505     | 84524       | 3.632   | 13.672    | 5.077  |
 | 3dgs   | 0.05       | 0.2       | 110505     | 84524       | 3.632   | 13.672    | 10.404 |
 
-[VISUAL: point cloud visualizations] 
+[VISUAL: point cloud visualizations]
 
-**Colmap point clouds**
-![COLMAP point clouds](assets/colmap_pcd_cc.png)
+**Colmap point clouds** ![COLMAP point clouds](assets/colmap_pcd_cc.png)
 
 **3DGS point clouds**
 
@@ -213,8 +211,7 @@ methods]
 
 ![Nerfacto point clouds](assets/nerf_pcd_cc.png)
 
-**Training efficiency.** 
-Splatfacto trained slower per iteration but reached
+**Training efficiency.** Splatfacto trained slower per iteration but reached
 comparable quality in fewer iterations. Its higher memory cost came from the
 explicit Gaussian parameters. With tiny-cuda-nn enabled, nerfacto's
 per-iteration speed improved 14x.
