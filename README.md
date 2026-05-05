@@ -149,6 +149,7 @@ episodes worth calling out:
 
 [VISUAL: side-by-side interpolated flythrough of nerfacto vs splatfacto using
 `ns-render interpolate` along the circular training camera path]
+
 ![Training camera renders](assets/sidebyside.mov)
 
 **3DGS outperformed NeRF on image quality.** 
@@ -200,6 +201,7 @@ methods]
 | 3dgs   | 0.05       | 0.2       | 110505     | 84524       | 3.632   | 13.672    | 10.404 |
 
 [VISUAL: point cloud visualizations] 
+
 **Colmap point clouds**
 ![COLMAP point clouds](assets/colmap_pcd_cc.png)
 
