@@ -13,7 +13,7 @@ preprocessing. Toolchain compilation on newly released hardware with no
 pre-built packages. Training and tuning through nerfstudio. Custom evaluation
 tooling to measure what the standard tools don't.
 
-Stack: PyTorch, Python · See the [full writeup] for a deep dive.
+Stack: PyTorch, Python · See the [full writeup](https://stephanbrezinsky.com/projects/3d-recon/) for a deep dive.
 
 [VISUAL: Rendered held-out evaluations of nerfacto and splatfacto (Ground truth
 on the left)]
