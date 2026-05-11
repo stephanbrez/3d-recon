@@ -1,5 +1,7 @@
 # Building a Real-World Benchmark for 3D Reconstruction
 
+Stack: PyTorch, Python · See the [full writeup](https://stephanbrezinsky.com/projects/3d-recon/) for a deep dive.
+
 Most NeRF and 3DGS benchmarks use curated data. Either synthetic scenes, or
 captures from professional multi-camera rigs under controlled lighting. The
 results look impressive, but they don't answer the real-world deployment
@@ -13,11 +15,6 @@ preprocessing. Toolchain compilation on newly released hardware with no
 pre-built packages. Training and tuning through nerfstudio. Custom evaluation
 tooling to measure what the standard tools don't.
 
-Stack: PyTorch, Python · See the [full writeup](https://stephanbrezinsky.com/projects/3d-recon/) for a deep dive.
-
-[VISUAL: Rendered held-out evaluations of nerfacto and splatfacto (Ground truth
-on the left)]
-
 **3DGS at 30k steps**
 
 ![3DGS at 30k steps](assets/splat_eval_30k.png)
@@ -25,6 +22,9 @@ on the left)]
 **NeRF at 30k steps**
 
 ![NeRF at 30k steps](assets/nerf_eval_30k.png)
+
+[VISUAL: Rendered held-out evaluations of nerfacto and splatfacto (Ground truth
+on the left)]
 
 ## The Problem
 
